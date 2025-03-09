@@ -13,10 +13,7 @@ app.get('/check-brand/:brand', async (req, res) => {
 
     const browser = await puppeteer.launch({
         args: ['--disable-setuid-sandbox', '--no-sandbox', '--single-process', '--no-zygote'],
-        executablePath:
-            process.env.NODE_ENV === 'production'
-                ? process.env.PUPPETEER_EXECUTABLE_PATH
-                : puppeteer.executablePath(),
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
     });
     const page = await browser.newPage();
     await page.setUserAgent(
