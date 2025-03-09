@@ -8,6 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/check-brand/:brand', async (req, res) => {
+    console.log('incoming request');
     const brand = req.params.brand; // Get brand from URL
     if (!brand) return res.status(400).json({ error: 'Brand name is required' });
 
