@@ -1,9 +1,10 @@
 {
     "scripts": {
-        "start": "PUPPETEER_CACHE_DIR=/opt/render/project/src node index.js"
+        "start": "node index.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
         "express": "^4.21.2",
         "puppeteer": "^24.4.0"
     }
