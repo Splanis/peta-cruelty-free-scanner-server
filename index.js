@@ -34,8 +34,6 @@ app.get('/check-brand/:brand', async (req, res) => {
         waitUntil: 'domcontentloaded',
     });
 
-    console.log('html', await page.content());
-
     // Check if brand is not found
     const notFound = await page.evaluate(() => !!document.querySelector('.post-not-found'));
 
