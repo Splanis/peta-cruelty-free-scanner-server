@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "node index.js"
+        "start": "PUPPETEER_CACHE_DIR=$(pwd) node index.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
