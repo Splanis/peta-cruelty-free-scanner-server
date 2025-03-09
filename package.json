@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "node index.js"
+        "start": "./install.sh"
     },
     "dependencies": {
         "cors": "^2.8.5",
