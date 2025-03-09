@@ -1,6 +1,5 @@
 {
     "scripts": {
-        "install": "./install.sh",
         "start": "node index.js"
     },
     "dependencies": {
